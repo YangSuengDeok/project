@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" type = "text/css" href="join.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="javascript">
+        function a() {
+    if(document.myform.myname.value=="")
+        {
+    alert("이름을 입력하세요!");
+    document.myform.myname.focus();
+        }
+        {
+    if(document.myform.myjumin.value=="")   
+    alert("주민등록 번호 앞자리를 입력하세요!");
+    document.myform.myjumin.focus();
+        }
+    {
+    if(document.myform.myjumin2.value=="")
+    alert("주민등록 번호뒷자리를 입력하세요!");
+    document.myform.myjumin2.focus();
+        }
+             {
+    if(document.myform.myid.value=="")
+    alert("아이디를 입력하세요!");
+    document.myform.myid.focus();
+        }
+             {
+    if(document.myform.mypassword.value=="")
+    alert("패스워드를 입력하세요!");
+    document.myform.mypassword.focus();
+        }
+             {
+    if(document.myform.mypassword2.value=="")
+    alert("패스워드 재입력을 입력하세요!");
+    document.myform.mypassword2.focus();
+        }
+                {
+    if(document.myform.myemail.value=="")
+    alert("e-mail 를 입력하세요!");
+    document.myform.myemail.focus();
+        }
+    {
+    if(document.myform.myemail2.value=="")
+    alert("e-mail 를 입력하세요!");
+    document.myform.myemail2.focus();
+        }
+                {
+    if(document.myform.myaddress.value=="")
+    alert("주소를 입력하세요!");
+    document.myform.myaddress.focus();
+        }
+ {
+    if(document.myform.myhome.value=="")
+    alert("집번호 앞자리를 입력하세요!");
+    document.myform.myhome.focus();
+        }
+ {
+    if(document.myform.myhome2.value=="")
+    alert("집번호 두번째를 입력하세요!");
+    document.myform.myhome2.focus();
+        }
+ {
+    if(document.myform.myhome3.value=="")
+    alert("집번호 세번 째를 입력하세요!");
+    document.myform.myhome3.focus();
+        }
+ {
+    if(document.myform.myphone.value=="")
+    alert("휴대폰 번호를 입력하세요!");
+    document.myform.myphone.focus();
+        }
+  {
+    if(document.myform.myphone2.value=="")
+    alert("휴대폰 번호를 입력하세요!");
+    document.myform.myphone2.focus();
+        }
+{
+    if(document.myform.myphone3.value=="")
+    alert("휴대폰 번호를 입력하세요!");
+    document.myform.myphone3.focus();
+        }
+    }
+    </script>
+
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>
+        <span>회</span><span>원</span><span>가</span> <span>입</span>
+    </h1>
+    <form name="myform">
+        <hr>
+        <table align="center">
+            <tr>
+                <td colspan="2">
+                    <h3> 
+                        아래의 있는 내용들을 입력하여 회원가입 하시길 바랍니다.
+                        <br>(* 표시는 필수입력 사항 입니다.) 
+                    </h3>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <br>
+    <table align="center" id="b">
+    <br>
+    <tr height="5" bgcolor="#fbbc05">
+    <td colspan="2"></td>
+    </tr>
+    <tr>
+    <th class ="pad"> 이름 </th>
+    <td id="a"><input type="text" name="myname"> *</td>
+    </tr>
+    <tr>
+    <th class ="pad"> 주민등록번호 </th>
+    <td><input type="text" name="myjumin"> - <input type="password" name="myjumin2"></td>
+    </tr>
+    <tr>
+    <th class ="pad"> 아이디 </th>
+    <td id="a"><input type="text" name="myid"> * 영문/숫자 (10~12자)</td>
+    </tr>
+    <tr>
+    <th class ="pad"> 패스워드 </th>
+        <td id="a"><input type="password" name="mypassword"> *</td>
+    </tr>
+    <tr>
+    <th class ="pad"> 패스워드 재입력 </th>
+    <td id="a"><input type="password2" name="mypassword2"> *</td>
+    </tr>
+    <tr>
+    <th class ="pad"> E-mail </th>
+    <td><input type="text" name="myemail"> @ <select name="myemail2">
+    <option value="" checked> 직접입력 </option>
+    <option value="naver"> naver.com </option>
+    <option value="daum"> daum.net </option>
+    <option value="nate"> nate.com </option>
+    <option value="gmail"> gmail.com </option>  
+    <option value="yahoo"> yahoo.com </option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <th class ="pad"> 주소 </th>
+    <td><input type="text" name="myupen">&nbsp;-&nbsp;<input type="text" name="myupen2">&nbsp;<input type="button" value="우편 번호"><br>
+    <input type="text" size="44" name="myaddress">
+    </td>
+    </tr>
+    <tr>
+    <th class ="pad"> 집번호 </th>
+    <td><select name="myhome">
+    <option value="" checked> 직접입력 </option>
+    <option value="first"> 031 </option>
+    <option value="second"> 032 </option>
+    <option value="third"> 033 </option>
+    <option value="four"> 042 </option>
+    <option value="five"> 051 </option>
+    </select>
+    -&nbsp;<input type="text" size="5" name="myhome2">-<input type="text" size="5" name="myhome3">
+    </td>
+    </tr>
+    <tr>
+    <th class ="pad"> 휴대폰 번호 </th>
+    <td><select  name="myphone">
+    <option value="" checked> 직접입력 </option>
+    <option value="first"> 010 </option>
+    <option value="second"> 011 </option></select>
+    <input type="text" size="5" name="myphone2">-<input type="text" size="5" name="myphone3">
+    </td>
+    </tr>
+    <tr>
+    <th class ="pad"> 개인정보 / SNS 수신확인 동의여부 </th>
+    <td class="c"><input type="radio" name="oo" checked> 수신허용
+           <input type="radio" name="oo"> 수신안함</td>
+    </tr>
+    <tr heigth="5" bgcolor="#fbbc05">
+    <td colspan="2">
+    </td>
+    </tr>
+    <tr>
+    <th colspan="2" class="pad"><center>저희 저리뷰 고 이용에 대해 매우 감사드립니다.</center></th>
+    </tr>
+    <tr heigth="5" bgcolor="#fbbc05">
+    <td colspan="2">
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center" class="pad">
+    <input type ="submit" value="제출" onclick="a()">
+    <input type="reset" value="취소">
+    </td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

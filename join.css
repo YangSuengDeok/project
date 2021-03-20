@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 90px;
+}
+h1 span:nth-child(1) {
+    color : #4285f4;
+  }
+h1 span:nth-child(2) {
+    color : #fbbc05;
+  }
+h1 span:nth-child(3) {
+    color : #ea4335;
+  }
+h1 span:nth-child(4) {
+    color : #4285f4;
+  }
+
+
+h3 {font-size:14;}
+#a {font-size:12;color:blue;}
+#b {padding:5px 0 5px 0; width:940; height:180;}
+#img {width:210; height:180;}
+td.c {font-weight:bold;}
+
+.pad{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+}
