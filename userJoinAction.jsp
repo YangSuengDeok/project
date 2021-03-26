@@ -12,10 +12,10 @@
 	if(request.getParameter("userPassword") != null) {
 		userPassword = (String) request.getParameter("userPassword");
 	}
-	if(userID == null || userPassword == null) {
+	if(userID.equals("") || userPassword.equals("")) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alret('입력이 안 된 사항이 있습니다.');");
+		script.println("alert('입력이 안 된 사항이 있습니다.');");
 		script.println("history.back();");
 		script.println("</script>");
 		script.close();
@@ -26,7 +26,7 @@
 	if (result == 1) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alret('회원가입에 성공했습니다.');");
+		script.println("alert('회원가입에 성공했습니다.');");
 		script.println("location.href = 'index.jsp';");
 		script.println("</script>");
 		script.close();
